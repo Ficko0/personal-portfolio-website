@@ -59,7 +59,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Hello! I'm Filip. I'm an aspiring full-stack web developer, passionate
+          Hello! I am Filip. I'm an aspiring full-stack web developer, passionate
           about building dynamic and responsive websites.
         </span>
       </motion.p>

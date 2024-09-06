@@ -28,7 +28,7 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
-          const { data, error } = await sendMail(formData);
+          const { error } = await sendMail(formData);
           if (error) {
             toast.error(error);
             return;
