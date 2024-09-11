@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import profilePic from '../public/PROFILNA CV.png';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -29,7 +30,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/public/PROFILNA CV.png"
+              src={profilePic}
               alt="Filip Portrait"
               width="192"
               height="192"
