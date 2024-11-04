@@ -32,7 +32,7 @@ export default function Skills() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
+            className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 hover:bg-gray-100 transition cursor-default"
             key={index}
           >
             {skill}

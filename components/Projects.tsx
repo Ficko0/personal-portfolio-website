@@ -18,16 +18,16 @@ export default function Projects() {
       transition={{
         delay: 0.175,
       }}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 overflow-x-hidden"
     >
       <SectionHeading title="Personal Projects" />
-      <div>
+      <>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
           </React.Fragment>
         ))}
-      </div>
+      </>
     </motion.section>
   );
 }

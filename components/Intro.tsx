@@ -39,19 +39,6 @@ export default function Intro() {
               className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
-          <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-            className="text-4xl absolute bottom-0 right-0"
-          >
-            👋
-          </motion.span>
         </div>
       </div>
       <motion.p
@@ -63,6 +50,8 @@ export default function Intro() {
           Hello! I am Filip. I'm an aspiring full-stack web developer,
           passionate about building dynamic and responsive websites.
         </span>
+        <br />
+        <span className="font-bold">Let's dive in!</span>
       </motion.p>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
@@ -74,7 +63,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group mx-2 bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact"), setTimeOfLastClick(Date.now());
           }}
@@ -85,7 +74,7 @@ export default function Intro() {
         <a
           href="/Latest CV.pdf"
           download
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group cursor-pointer border border-black/10"
+          className="bg-white mx-2 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group cursor-pointer border border-black/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -93,14 +82,14 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/filip-zlatanovski-a742092b4/"
           target="_blank"
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group cursor-pointer border border-black/10"
+          className="bg-white mx-2 text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group cursor-pointer border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/Ficko0"
           target="_blank"
-          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group cursor-pointer border border-black/10"
+          className="bg-white mx-2 text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition group cursor-pointer border border-black/10"
         >
           <FaGithubSquare />
         </a>

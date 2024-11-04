@@ -22,7 +22,12 @@ export default function Contact() {
       <SectionHeading title="Contact Me" />
       <p className="text-gray-700">
         You can get in contact with me directly at{" "}
-        <a href="mailto:ficozlatanovski@gmail.com">ficozlatanovski@gmail.com</a>{" "}
+        <a
+          className="text-gray-600 font-semibold hover:text-gray-800 transition"
+          href="mailto:ficozlatanovski@gmail.com"
+        >
+          ficozlatanovski@gmail.com
+        </a>{" "}
         or through this form below!
       </p>
       <form
