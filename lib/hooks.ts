@@ -3,7 +3,10 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { HeaderSections } from "./types";
 
-export function useSectionInView(headerNames: HeaderSections, threshold = 0.75) {
+export function useSectionInView(
+  headerNames: HeaderSections,
+  threshold = 0.75
+) {
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
   const { ref, inView } = useInView({
     threshold,

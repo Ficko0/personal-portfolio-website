@@ -15,7 +15,7 @@ export default function About() {
       transition={{
         delay: 0.175,
       }}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-4 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
     >
       <SectionHeading title="About Me" />
       <p className="mb-3">

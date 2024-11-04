@@ -7,7 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
-import profilePic from '../public/cv better image.jpg'
+import profilePic from "../public/new cv image.jpg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -60,8 +60,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Hello! I am Filip. I'm an aspiring full-stack web developer, passionate
-          about building dynamic and responsive websites.
+          Hello! I am Filip. I'm an aspiring full-stack web developer,
+          passionate about building dynamic and responsive websites.
         </span>
       </motion.p>
       <motion.div
@@ -83,7 +83,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1" />
         </Link>
         <a
-          href="/CV.pdf"
+          href="/Latest CV.pdf"
           download
           className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group cursor-pointer border border-black/10"
         >

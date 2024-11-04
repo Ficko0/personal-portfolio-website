@@ -2,6 +2,9 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import { useSectionInView } from "@/lib/hooks";
+import { projectsData } from "@/lib/data";
+import Project from "./Project";
+import React from "react";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.9);
@@ -19,7 +22,11 @@ export default function Projects() {
     >
       <SectionHeading title="Personal Projects" />
       <div>
-        <p className="mb-3">Currently working on a personal project</p>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
       </div>
     </motion.section>
   );
