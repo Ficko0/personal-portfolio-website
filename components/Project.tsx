@@ -29,7 +29,7 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="mb-3 sm:mb-8 last:mb-0"
+      className="mb-3 sm:mb-8 last:mb-0 overflow-x-hidden"
     >
       <section className="group rounded-lg bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full">
@@ -50,7 +50,7 @@ export default function Project({
           src={imageUrl}
           alt={title}
           quality={95}
-          className="absolute top-8 -right-40 w-[28.25rem] transition rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.03]"
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] transition rounded-t-lg shadow-2xl group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.03]"
         />
       </section>
     </motion.div>
