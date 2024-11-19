@@ -1,6 +1,7 @@
 import backendImage from "@/public/back-end web api.png";
 import calcImage from "@/public/calculator.png";
 import tripPlannerImage from "@/public/trip planner.png";
+import issueTrackerImage from "@/public/issue-tracker-img.png";
 import React from "react";
 import { LuBookOpen, LuGraduationCap, LuNewspaper } from "react-icons/lu";
 
@@ -43,17 +44,26 @@ export const projectsData = [
   {
     title: "Trip Planner App",
     description:
-      "Trip planner application where you can book a trip for a certain amount of days.",
+      "Trip planner application that allows the user to book a trip to a country of choice.",
     tags: ["TypeScript", "React", "React Forms", "ContextAPI", "TailwindCSS"],
     imageUrl: tripPlannerImage,
     projectUrl: "https://github.com/Ficko0/Trip-Planner",
   },
   {
     title: "Music App API",
-    description: "Back-end API made using NestJS.",
+    description:
+      "Back-end API made using NestJS with a self-engineered auth service.",
     tags: ["TypeScript", "NestJS", "JWT", "TypeORM", "Swagger", "PostgreSQL"],
     imageUrl: backendImage,
     projectUrl: "https://github.com/Ficko0/Music-App-API",
+  },
+  {
+    title: "Issue Tracker App",
+    description:
+      "An issue tracker appication made using Angular 18 newest syntax and managing the state of the app through a signal store.",
+    tags: ["TypeScript", "Angular 18"],
+    imageUrl: issueTrackerImage,
+    projectUrl: "https://github.com/Ficko0/Issue-Tracker",
   },
 ] as const;
 
@@ -83,7 +93,7 @@ export const experienceData = [
     title: "Assistant Lecturer at the Qinshift Academy for Programming",
     location: "Skopje, Macedonia",
     description:
-      "Spreading my knowledge, skills and expertise with the upcoming generations.",
+      "Tutoring and helping students learn the newest and latest coding practices.",
     icon: React.createElement(LuBookOpen),
     date: "Nov 2024 - Current",
   },

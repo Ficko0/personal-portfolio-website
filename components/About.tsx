@@ -26,7 +26,7 @@ export default function About() {
         developing scalable, responsive web applications. My goal is to
         continuously enhance my expertise in creating dynamic user experiences
         and efficient, reliable back-end systems. As of lately, I've had the
-        honour to spread my knowledge and expretise as an assistant lecturer at
+        honour to spread my knowledge and expertise as an assistant lecturer at
         the Qinshift Academy for Programming.
       </p>
     </motion.section>

@@ -7,7 +7,7 @@ import Project from "./Project";
 import React from "react";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.9);
+  const { ref } = useSectionInView("Projects", 0.4);
 
   return (
     <motion.section
@@ -20,7 +20,7 @@ export default function Projects() {
       }}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 overflow-x-hidden"
     >
-      <SectionHeading title="Personal Projects" />
+      <SectionHeading title="Projects" />
       <>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>

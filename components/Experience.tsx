@@ -14,10 +14,12 @@ export default function Experience() {
     <motion.section
       id="experience"
       ref={ref}
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
       transition={{
-        delay: 0.175,
+        delay: 0.2,
+        duration: 1,
       }}
       className="flex flex-col flex-wrap mb-10"
     >
