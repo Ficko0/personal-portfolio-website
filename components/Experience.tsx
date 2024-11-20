@@ -23,7 +23,7 @@ export default function Experience() {
       }}
       className="flex flex-col flex-wrap mb-10"
     >
-      <SectionHeading title="Experience" />
+      <SectionHeading title="My Journey" />
       {experienceData.map((item, index) => (
         <div
           className="border border-black/[0.7rem] mx-5 my-5 px-4 py-4 bg-gray-200 rounded-lg shadow-md hover:bg-gray-300 transition"

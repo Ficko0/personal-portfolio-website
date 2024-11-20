@@ -60,7 +60,7 @@ export const projectsData = [
   {
     title: "Issue Tracker App",
     description:
-      "An issue tracker appication made using Angular 18 newest syntax and managing the state of the app through a signal store.",
+      "An issue tracker application made using Angular 18 newest syntax and managing the state of the app through a signal store.",
     tags: ["TypeScript", "Angular 18"],
     imageUrl: issueTrackerImage,
     projectUrl: "https://github.com/Ficko0/Issue-Tracker",

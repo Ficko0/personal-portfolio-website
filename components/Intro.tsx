@@ -47,8 +47,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Hello! I am Filip. I'm an aspiring full-stack web developer,
-          passionate about building dynamic and responsive websites.
+          Hello! I'm Filip, a junior web developer always up for a challenge.
         </span>
         <br />
         <span className="font-bold">Let's dive in!</span>
