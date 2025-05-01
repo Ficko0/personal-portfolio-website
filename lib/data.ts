@@ -1,11 +1,36 @@
+import React from "react";
 import backendImage from "@/public/back-end web api.png";
 import calcImage from "@/public/calculator.png";
 import tripPlannerImage from "@/public/trip planner.png";
 import issueTrackerImage from "@/public/issue-tracker-img.png";
-import React from "react";
-import { LuBookOpen, LuGraduationCap, LuNewspaper } from "react-icons/lu";
+import rickMortyImage from "@/public/rick-morty.jpg";
+import drumKitImage from "@/public/drumKit.png";
+import todoImage from "@/public/todo.png";
+import { LuBookOpen, LuGraduationCap, LuCode } from "react-icons/lu";
+import { StaticImageData } from "next/image";
 
-export const headerLinks = [
+interface ExperienceData {
+  title: string;
+  location: string;
+  description: string;
+  icon: React.ReactElement;
+  date: string;
+}
+
+interface HeaderLinks {
+  name: string;
+  hash: string;
+}
+
+interface ProjectsData {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  projectUrl: string;
+}
+
+export const headerLinks: HeaderLinks[] = [
   {
     name: "Home",
     hash: "#home",
@@ -32,7 +57,31 @@ export const headerLinks = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsData: ProjectsData[] = [
+  {
+    title: "Vanilla JS To-Do Application",
+    description:
+      "Simple vanilla JavaScript To-Do application that stores the tasks in local storage",
+    tags: ["JavaScript"],
+    imageUrl: todoImage,
+    projectUrl: "https://github.com/Ficko0/todo-vanilajs",
+  },
+  {
+    title: "Drum Kit App",
+    description:
+      "A drum machine application made using NextJS and EmotionJSX styled components",
+    tags: ["JavaScript", "TypeScript", "NextJS", "EmotionJSX"],
+    imageUrl: drumKitImage,
+    projectUrl: "https://github.com/Ficko0/drum-machine",
+  },
+  {
+    title: "Rick & Morty GraphQL",
+    description:
+      "Simple GraphQL app made using NextJS and Apollo GraphQL with AntDesign styled components",
+    tags: ["JavaScript", "TypeScript", "NextJS", "GraphQL", "AntDesign"],
+    imageUrl: rickMortyImage,
+    projectUrl: "https://github.com/Ficko0/rick-morty-graphql",
+  },
   {
     title: "Vanilla JS Calculator",
     description:
@@ -67,7 +116,7 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
+export const skillsData: string[] = [
   "HTML",
   "CSS",
   "JavaScript",
@@ -86,9 +135,23 @@ export const skillsData = [
   "Angular 18",
   "DrizzleORM",
   "TypeORM",
+  "GraphQL",
+  "Hasura",
+  "Prisma",
+  "MySQL",
+  "Vesion Control",
+  "Unit Testing",
 ] as const;
 
-export const experienceData = [
+export const experienceData: ExperienceData[] = [
+  {
+    title: "Software Engineering Intern at Pabau Clinic Software",
+    location: "Skopje, Macedonia",
+    description:
+      "Implemented various new features and worked on the main software hands on.",
+    icon: React.createElement(LuCode),
+    date: "Feb 2025 - May 2025",
+  },
   {
     title: "Assistant Lecturer at the Qinshift Academy for Programming",
     location: "Skopje, Macedonia",
