@@ -47,10 +47,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Hello! I'm Filip, a junior web developer always up for a challenge.
+          Hello! I'm Filip, a <span className="text-purple-500">Junior</span>{" "}
+          Web Developer always up for a challenge.
         </span>
         <br />
-        <span className="font-bold">Let's dive in!</span>
+        <span className="font-bold text-purple-500">Let's dive in!</span>
       </motion.p>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
@@ -71,7 +72,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1" />
         </Link>
         <a
-          href="/Latest CV.pdf"
+          href="/CV - Filip Zlatanovski.pdf"
           download
           className="bg-white mx-2 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition group cursor-pointer border border-black/10"
         >

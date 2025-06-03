@@ -6,6 +6,7 @@ import issueTrackerImage from "@/public/issue-tracker-img.png";
 import rickMortyImage from "@/public/rick-morty.jpg";
 import drumKitImage from "@/public/drumKit.png";
 import todoImage from "@/public/todo.png";
+import starWarsImage from "@/public/starWarsImage.png";
 import { LuBookOpen, LuGraduationCap, LuCode } from "react-icons/lu";
 import { StaticImageData } from "next/image";
 
@@ -58,6 +59,13 @@ export const headerLinks: HeaderLinks[] = [
 ] as const;
 
 export const projectsData: ProjectsData[] = [
+  {
+    title: "Star Wars GraphQL",
+    description: "Simple GraphQL api querying for Star Wars character data",
+    tags: ["JavaScript", "TypeScript", "React", "GraphQL", "Apollo Client"],
+    projectUrl: "https://github.com/Ficko0/star-wars-task",
+    imageUrl: starWarsImage,
+  },
   {
     title: "Vanilla JS To-Do Application",
     description:
@@ -139,7 +147,7 @@ export const skillsData: string[] = [
   "Hasura",
   "Prisma",
   "MySQL",
-  "Vesion Control",
+  "Version Control",
   "Unit Testing",
 ] as const;
 
@@ -153,15 +161,15 @@ export const experienceData: ExperienceData[] = [
     date: "Feb 2025 - May 2025",
   },
   {
-    title: "Assistant Lecturer at the Qinshift Academy for Programming",
+    title: "Assistant Lecturer at the Avenga Academy for Programming",
     location: "Skopje, Macedonia",
     description:
-      "Tutoring and helping students learn the newest and latest coding practices.",
+      "Helping students learn the newest and latest coding practices.",
     icon: React.createElement(LuBookOpen),
     date: "Nov 2024 - Current",
   },
   {
-    title: "Graduated at Qinshift Academy for Programming",
+    title: "Graduated at Avenga Academy for Programming",
     location: "Skopje, Macedonia",
     description:
       "I enroled in a coding bootcamp where I learned all the basic and advanced prinicples of programming.",

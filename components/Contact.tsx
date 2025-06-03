@@ -20,16 +20,6 @@ export default function Contact() {
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
     >
       <SectionHeading title="Contact Me" />
-      <p className="text-gray-700">
-        You can get in contact with me directly at{" "}
-        <a
-          className="text-gray-600 font-semibold hover:text-gray-800 transition"
-          href="mailto:ficozlatanovski@gmail.com"
-        >
-          ficozlatanovski@gmail.com
-        </a>{" "}
-        or through this form below!
-      </p>
       <form
         className="mt-10 flex flex-col"
         action={async (formData) => {
@@ -54,7 +44,7 @@ export default function Contact() {
           name="message"
           required
           maxLength={200}
-          className="h-52 p-4 my-3 rounded-lg borderBlack"
+          className="h-52 p-4 my-3 rounded-lg borderBlack resize-none"
         />
         <div className="flex justify-center items-center">
           <SubmitFormButton />
